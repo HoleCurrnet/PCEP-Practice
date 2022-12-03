@@ -1,0 +1,16 @@
+print('Welsome to the return process') 
+
+answer_a = input('Is your item unopened and was it purchased in the last 10 days? y/n')
+if answer_a == 'n':
+    answer_b = input('Is your item defective? y/n')
+    if answer_b == 'y':
+        print('Okay. We may proceed with your return.')
+    elif answer_b == 'n':
+        print('We are sorry, but you are outside of the return window')
+    else:
+        print('Please try again')
+elif answer_a == 'y':
+    print('Okay. We may proceed with your return.')
+    
+else:
+    print('Please try again')
